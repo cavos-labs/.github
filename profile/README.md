@@ -12,7 +12,7 @@ Cavos Labs builds **invisible crypto infrastructure** that makes blockchain tech
 ### Our Mission
 Unlock the power of crypto for everyone with one simple integration. No seed phrases, no wallet popups, no user confusion.
 
-## ⚡ What We're Building
+## What We're Building
 
 ### **AEGIS Platform**
 Complete invisible crypto infrastructure with:
