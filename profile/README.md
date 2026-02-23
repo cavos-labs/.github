@@ -1,82 +1,59 @@
 # Cavos Labs
 
-> **Invisible Crypto Infrastructure** - Making blockchain accessible to everyone
+> **Invisible Crypto Infrastructure for Starknet** - Bridging the gap between blockchain and mainstream apps
 
 [![Website](https://img.shields.io/badge/Website-cavos.xyz-blue)](https://cavos.xyz)
 [![Twitter](https://img.shields.io/badge/Twitter-@cavosxyz-1DA1F2)](https://x.com/cavosxyz)
 
 ## About Us
 
-Cavos Labs builds **invisible crypto infrastructure** that makes blockchain technology seamless and accessible. We provide powerful SDKs and APIs that integrate crypto wallets, smart contract execution, and onramp solutions directly into applications—without the complexity.
+Cavos Labs builds infrastructure that makes interacting with Starknet seamless. We provide powerful SDKs and smart contract architectures that integrate gasless transactions, invisible wallets via OAuth (Apple/Google), and autonomous AI agent session keys directly into your applications.
 
 ### Our Mission
-Unlock the power of crypto for everyone with one simple integration. No seed phrases, no wallet popups, no user confusion.
+Remove the friction from Web3. No seed phrases, no wallet popups, just standard social logins and seamless on-chain execution powered by Starknet Account Abstraction and Enshrined Paymasters.
 
-## What We're Building
+## 📦 What We're Building
 
-### **AEGIS Platform**
-Complete invisible crypto infrastructure with:
+### **Core Repositories**
 
-- **Invisible Wallets**: Email/social login authentication - no seed phrases or browser extensions
-- **Smart Contract Execution**: Trigger any Starknet smart contract with a single API call
-- **Integrated Onramp**: Direct crypto purchases inside your app - no redirections
-- **Developer-First**: TypeScript/JavaScript SDK, React Native SDK, and RESTful APIs
+- 🧠 **[cavos-skills](https://github.com/cavos-labs/cavos-skills)** - Comprehensive knowledge base for the Cavos React SDK — enabling AI agents to understand Starknet account abstraction via OAuth, session keys, and gasless transactions.
+- 📱 **[react](https://github.com/cavos-labs/react)** - The core `@cavos/react` TypeScript library for managing in-app wallets seamlessly tied to social logins on Starknet.
+- ⚛️ **[react-native](https://github.com/cavos-labs/react-native)** - Cavos React Native package bringing account abstraction and invisible wallets to mobile platforms.
+- 📜 **[cavos](https://github.com/cavos-labs/cavos)** - The core Cairo smart contracts including our highly-optimized RSA signature verification and Account Abstraction logic.
+- 🤖 **[agent](https://github.com/cavos-labs/agent)** - Web view interface for administering and managing agent Session Keys.
+- 🚀 **[create-cavos-app](https://github.com/cavos-labs/create-cavos-app)** - Quickstart CLI and templates to bootstrap your Cavos-powered Starknet dApps instantly.
+- 📖 **[docs](https://github.com/cavos-labs/docs)** - Official comprehensive documentation for integrating Cavos SDKs.
 
-### **Core Features**
-- **Account Abstraction**: Deploy smart accounts on Starknet with one API call  
-- **Multi-Network Support**: Sepolia testnet and Mainnet environments
-- **Frictionless UX**: Users interact with blockchain without seeing wallets
-- **Compliant Onramp**: Seamless, regulated crypto purchasing experience
+## 🛠 Features
 
-## Integration Options
+- **OAuth Account Abstraction:** Deploy Starknet Smart Accounts entirely controlled by JWT tokens (Apple/Google).
+- **Session Keys:** Issue granular session keys to allow AI agents or background services to perform transactions on your behalf without multiple prompts.
+- **Gasless Transactions:** Built-in support for SNIP-29 Enshrined Paymaster standard, ensuring robust and decentralized transaction sponsorship.
+- **Highly Optimized Cairo:** Industry-leading gas optimizations using Karatsuba algorithms for RSA signature verification on-chain.
 
-### Web SDK
-```javascript
-import { CavosAuth } from 'cavos-service-sdk';
-// Integrate authentication, wallets, and contracts in web/Node.js
+## 💻 Integration Examples
+
+### React App
+```tsx
+import { CavosProvider } from '@cavos/react';
+
+export default function App({ children }) {
+  return (
+    <CavosProvider 
+      appId="your_app_id"
+      network="sepolia"
+    >
+      {children}
+    </CavosProvider>
+  );
+}
 ```
 
-### Mobile SDK  
-```javascript
-import { SignInWithApple, SignInWithGoogle, CavosWallet } from 'cavos-service-native';
-// Invisible wallets and social login for React Native
-```
+## 📬 Get in Touch
 
-### REST API
-```bash
-# Direct API endpoints for any stack
-curl -X POST https://api.aegis.cavos.xyz/v1/deploy-account
-```
-
-## 🔗 Key Repositories
-
-- [`aegis-sdk-example`](https://github.com/cavos-labs/aegis-sdk-example) - SDK examples and integration guides
-- [`cavos-service-sdk`](https://github.com/cavos-labs/cavos-service-sdk) - Core TypeScript/JavaScript SDK
-- [`dojo-coding-ai-class`](https://github.com/cavos-labs/dojo-coding-ai-class) - Full Starknet application with AI
-- [`cavos-docs`](https://github.com/cavos-labs/cavos-docs) - Comprehensive documentation
-
-## How It Works
-
-1. **Authenticate**: Users sign up with email or social login
-2. **Interact**: Seamless smart contract interactions without wallet complexity  
-3. **Buy Crypto**: Integrated onramp for direct crypto purchases
-
-## Built With Modern Tech
-
-- **Starknet**: Advanced Layer 2 blockchain technology
-- **Account Abstraction**: Smart account wallet infrastructure
-- **TypeScript**: Type-safe development experience
-- **React Native**: Cross-platform mobile integration
-
-## Get Started
-
-Ready to integrate invisible crypto infrastructure?
-
-- **Website**: [aegis.cavos.xyz](https://cavos.xyz)
+- **Website**: [cavos.xyz](https://cavos.xyz)
 - **Twitter**: [@cavosxyz](https://x.com/cavosxyz)
-- **Email**: adrianvrj@cavos.xyz
-- **Schedule Demo**: Get access and start building
 
 ---
 
-*Making crypto invisible, one integration at a time.* ⚡
+*Making Starknet invisible, one integration at a time.* ⚡
