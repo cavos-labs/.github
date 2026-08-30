@@ -4,7 +4,7 @@ Device-native, self-custodial embedded wallets for Starknet, Solana, and Stellar
 
 ## Mission
 
-Remove the friction from Web3. No seed phrases, no wallet popups, just social logins and on-chain execution across Starknet, Solana, and Stellar.
+The social and financial identity for self-custodial users.
 
 ## How it works
 
