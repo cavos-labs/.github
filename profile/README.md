@@ -20,21 +20,22 @@ import { Cavos } from "@cavos/kit";
 
 const wallet = await Cavos.connect({
   chain: "solana",
-  network: "mainnet",
-  auth: { provider: "google", token },
+  network: "testnet",
+  identity: { userId: "user-123", email: "user@example.com" },
   appId: "your-app-id",
-  appSalt: "device-slot",
+  appSalt: "my-app",
 });
 
-if (wallet.status === "ready") {
-  const tx = wallet.narrow("solana").execute(/* ... */);
+if (wallet.status === "undeployed" || wallet.status === "ready") {
+  if (wallet.chain === "solana") {
+    const tx = await wallet.execute(/* ... */);
+  }
 }
 ```
 
 ## Repositories
 
 - [kit](https://github.com/cavos-labs/kit) — `@cavos/kit` SDK
-- [cavos](https://github.com/cavos-labs/cavos) — dashboard, hosted API, and documentation source
 - [account-contracts](https://github.com/cavos-labs/account-contracts) — on-chain account contracts
 - [cavos-recovery](https://github.com/cavos-labs/cavos-recovery) — hardware-isolated social recovery (AWS Nitro Enclave); opt-in, non-custodial
 
