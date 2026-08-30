@@ -4,7 +4,7 @@ Device-native, self-custodial embedded wallets for Starknet, Solana, and Stellar
 
 ## Mission
 
-Give every user a social identity and a self-custodial wallet that are the same person.
+The social and financial identity for self-custodial users.
 
 ## How it works
 
