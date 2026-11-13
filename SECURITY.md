@@ -7,7 +7,7 @@ Stellar and Solana relayers, and the recovery enclave in
 
 ## Report a vulnerability
 
-Email **hello@cavos.xyz** with the subject `Security:` and include:
+Email **adrianvrj@cavos.xyz** with the subject `Security:` and include:
 
 - the affected package, version, or URL,
 - steps to reproduce or a proof of concept,
